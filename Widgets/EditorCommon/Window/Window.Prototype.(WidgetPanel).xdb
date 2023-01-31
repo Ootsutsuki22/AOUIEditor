@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Children>
+		<Item href="WindowPanel.(WidgetPanel).xdb" />
+		<Item href="WindowHeader.(WidgetPanel).xdb" />
+		<Item href="GoldenCorner.(WidgetPanel).xdb" />
+	</Children>
+	<Placement>
+		<X>
+			<Size>600</Size>
+		</X>
+		<Y>
+			<Size>440</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

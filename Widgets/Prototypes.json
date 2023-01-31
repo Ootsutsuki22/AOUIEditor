@@ -1,0 +1,817 @@
+﻿{
+  "WidgetForm": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty",
+        "Description": "Пустая форма, у которой заданы следующие свойства:\nPriority = 4000\nPlacement.X.Align = WidgetAlign.WIDGET_ALIGN_BOTH\nPlacement.Y.Align = WidgetAlign.WIDGET_ALIGN_BOTH\nPickChildrenOnly = true"
+      }
+    ]
+  },
+  "WidgetPanel": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      },
+      {
+        "Icon": "Icons\\MsgBoxLight.png",
+        "Name": "MsgBoxLight",
+        "MainFile": "EditorCommon\\MsgBox\\MsgBoxLight.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\MsgBox\\MsgBoxLight.(UISingleTexture).xdb",
+          "EditorCommon\\MsgBox\\MsgBoxLight.(UITexture).bin",
+          "EditorCommon\\MsgBox\\MsgBoxLight.(UITexture).xdb",
+          "EditorCommon\\MsgBox\\MsgBoxLight.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Панель в стиле тултипа"
+      },
+      {
+        "Icon": "Icons\\MsgBoxShaded.png",
+        "Name": "MsgBoxShaded",
+        "MainFile": "EditorCommon\\MsgBox\\MsgBoxShaded.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\MsgBox\\MsgBoxShaded.(UISingleTexture).xdb",
+          "EditorCommon\\MsgBox\\MsgBoxShaded.(UITexture).bin",
+          "EditorCommon\\MsgBox\\MsgBoxShaded.(UITexture).xdb",
+          "EditorCommon\\MsgBox\\MsgBoxShaded.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Панель в стиле окна уведомлений игры (смерть персонажа, подтверждение отправки на остров и т.п.)"
+      },
+      {
+        "Icon": "Icons\\ContentFrame.png",
+        "Name": "ContentFrame",
+        "MainFile": "EditorCommon\\ContentFrame\\ContentFrame.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\ContentFrame\\ContentFrame.(UISingleTexture).xdb",
+          "EditorCommon\\ContentFrame\\ContentFrame.(UITexture).bin",
+          "EditorCommon\\ContentFrame\\ContentFrame.(UITexture).xdb",
+          "EditorCommon\\ContentFrame\\ContentFrame.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Полупрозрачная рамка для контента. Например, в такую панель можно вставлять WidgetEditLine"
+      },
+      {
+        "Icon": "Icons\\ListEntry.png",
+        "Name": "ListEntry",
+        "MainFile": "EditorCommon\\ListEntry\\ListEntry.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\ListEntry\\ListEntry.(UISingleTexture).xdb",
+          "EditorCommon\\ListEntry\\ListEntry.(UITexture).bin",
+          "EditorCommon\\ListEntry\\ListEntry.(UITexture).xdb",
+          "EditorCommon\\ListEntry\\ListEntry.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Полупрозрачная рамка для контента. Например, в такую панель можно вставлять WidgetEditLine"
+      },
+      {
+        "Icon": "Icons\\Frame.png",
+        "Name": "Frame",
+        "MainFile": "EditorCommon\\WindowFrame\\Frame.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\WindowFrame\\Frame.(UISingleTexture).xdb",
+          "EditorCommon\\WindowFrame\\Frame.(UITexture).bin",
+          "EditorCommon\\WindowFrame\\Frame.(UITexture).xdb",
+          "EditorCommon\\WindowFrame\\Frame.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Полупрозрачная рамка для контента. Например, в такую панель можно вставлять WidgetEditLine"
+      },
+      {
+        "Icon": "Icons\\TiledHeader.png",
+        "Name": "WindowHeader",
+        "MainFile": "EditorCommon\\WindowHeader\\WindowHeader.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\WindowHeader\\HeaderText.(WidgetTextView).xdb",
+          "EditorCommon\\WindowHeader\\HeaderText.txt",
+          "EditorCommon\\WindowHeader\\TiledHeader.(UISingleTexture).xdb",
+          "EditorCommon\\WindowHeader\\TiledHeader.(UITexture).bin",
+          "EditorCommon\\WindowHeader\\TiledHeader.(UITexture).xdb",
+          "EditorCommon\\WindowHeader\\TiledHeader.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Панель с заголовком окна. Имеет дочерний виджет \"HeaderText\" с тэгом для подстановки \"window_header\" через TextView:SetVal"
+      },
+      {
+        "Icon": "Icons\\GoldenCorner.png",
+        "Name": "GoldenCorner",
+        "MainFile": "EditorCommon\\CornerCross\\GoldenCorner.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\CornerCross\\CornerCross.(WidgetButton).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(UITexture).bin",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(UITexture).bin",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(UITexture).bin",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CornerCross\\GoldenCorner.(UITexture).bin",
+          "EditorCommon\\CornerCross\\GoldenCorner.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\GoldenCorner.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\GoldenCorner.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Панель с дочерней кнопкой закрытия. Реакции уже заданные в кнопке:\n<Reaction>cross_close</Reaction>\n<ReactionRightClick>cross_close</ReactionRightClick>\n<ReactionOnPointing>cross_over</ReactionOnPointing>"
+      },
+      {
+        "Icon": "Icons\\Window.png",
+        "Name": "Window",
+        "MainFile": "EditorCommon\\Window\\Window.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\Window\\WindowHeader.(WidgetPanel).xdb",
+          "EditorCommon\\Window\\WindowPanel.(WidgetPanel).xdb",
+          "EditorCommon\\Window\\GoldenCorner.(WidgetPanel).xdb",
+          "EditorCommon\\WindowFrame\\Frame.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\WindowFrame\\Frame.(UISingleTexture).xdb",
+          "EditorCommon\\WindowFrame\\Frame.(UITexture).bin",
+          "EditorCommon\\WindowFrame\\Frame.(UITexture).xdb",
+          "EditorCommon\\WindowFrame\\Frame.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\WindowHeader\\WindowHeader.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\WindowHeader\\HeaderText.(WidgetTextView).xdb",
+          "EditorCommon\\WindowHeader\\HeaderText.txt",
+          "EditorCommon\\WindowHeader\\TiledHeader.(UISingleTexture).xdb",
+          "EditorCommon\\WindowHeader\\TiledHeader.(UITexture).bin",
+          "EditorCommon\\WindowHeader\\TiledHeader.(UITexture).xdb",
+          "EditorCommon\\WindowHeader\\TiledHeader.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\CornerCross\\GoldenCorner.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\CornerCross\\CornerCross.(WidgetButton).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(UITexture).bin",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(UITexture).bin",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossNormal.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(UITexture).bin",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\CornerCrossPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CornerCross\\GoldenCorner.(UITexture).bin",
+          "EditorCommon\\CornerCross\\GoldenCorner.(UITexture).xdb",
+          "EditorCommon\\CornerCross\\GoldenCorner.(UITextureElement).xdb",
+          "EditorCommon\\CornerCross\\GoldenCorner.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Окно с заголовком и кнопкой закрытия, собрано из других прототипов. Снизу оставлено место под BottomTab"
+      },
+      {
+        "Icon": "Icons\\ScrollBarBackground.png",
+        "Name": "ScrollBarBackground",
+        "MainFile": "EditorCommon\\ScrollBars\\ScrollBarBackground.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\ScrollBars\\Textures\\ScrollBarVertical.(UISingleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollBarVertical.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollBarVertical.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollBarVertical.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Задний фон для скроллбара"
+      },
+      {
+        "Icon": "Icons\\UniSlot.png",
+        "Name": "UniSlot",
+        "MainFile": "EditorCommon\\UniSlot\\Slot.Prototype.(WidgetPanel).xdb",
+        "Files": [
+          "EditorCommon\\UniSlot\\SlotAutocast.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotBlink.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotButton.(WidgetButton).xdb",
+          "EditorCommon\\UniSlot\\SlotCount.(WidgetTextView).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotLocked.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotAutocast\\SlotAutocast.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotAutocast\\SlotAutocast.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotAutocast\\SlotAutocast.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotAutocast\\SlotAutocast.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotAutocast\\SlotAutocast.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotBlink\\SlotBlink.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotBlink\\SlotBlink.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotBlink\\SlotBlink.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotBlink\\SlotBlink.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotBlink\\SlotBlink.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotButton.Prototype.(WidgetButton).xdb",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotHighlight.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotHighlight.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotHighlight.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotPressed.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotPressed.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotPressed.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotButton\\SlotPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotDisabled.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotDisabled.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotDisabled.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotFrame.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotFrame.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotFrame.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotFrame.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotFrame.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotFrame\\SlotIcon.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIcon.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIcon.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIcon.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIcon.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIcon.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIconShade.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIconShade.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIconShade.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotIcon\\SlotIconShade.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotLocked\\SlotLocked.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotLocked\\SlotLocked.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQuality.Prototype.(WidgetPanel).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityDown.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityDown.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityDown.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityDown.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityUp.(UITexture).bin",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityUp.(UITexture).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityUp.(UITextureElement).xdb",
+          "EditorCommon\\UniSlot\\SlotQuality\\SlotQualityUp.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCount.Prototype.(WidgetTextView).xdb",
+          "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCount.txt",
+          "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCountFormat.(UIRelatedTexts).xdb",
+          "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCountFormatExtended.txt",
+          "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCountFormatNormal.txt",
+          "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCountValue.txt"
+        ],
+        "Description": "Панель в стиле тултипа"
+      }
+    ]
+  },
+  "WidgetTextView": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty",
+        "Format": "<body fontsize=\"14\" color=\"0xffffffff\"><rs class=\"class\"><r name=\"value\"/></rs></body>",
+        "Description": "Пустой WidgetTextView, у которого заданы следующие свойства:\nPlacement.X.Sizing = WidgetSizing.WIDGET_SIZING_INTERNAL\nPlacement.Y.Sizing = WidgetSizing.WIDGET_SIZING_INTERNAL\nTransparentInput = true\nFormatFileRef = {имя-файла-виджета}.txt\nФайл форматирования будет создан в той же папке, отредактируйте его под ваши нужды"
+      }
+    ]
+  },
+  "WidgetButton": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      },
+      {
+        "Icon": "Icons\\ButtonRegularNormal.png",
+        "Name": "ButtonRegular2",
+        "MainFile": "EditorCommon\\ButtonRegular2\\ButtonRegular.Prototype.(WidgetButton).xdb",
+        "Files": [
+          "EditorCommon\\ButtonRegular2\\ButtonFormatDisabled.txt",
+          "EditorCommon\\ButtonRegular2\\ButtonFormatNormal.txt",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularDisabled.(UISingleTexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularDisabled.(UITexture).bin",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularDisabled.(UITexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularDisabled.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularHighlighted.(UISingleTexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularHighlighted.(UITexture).bin",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularHighlighted.(UITexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularHighlighted.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularNormal.(UISingleTexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularNormal.(UITexture).bin",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularNormal.(UITexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularNormal.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularPressed.(UISingleTexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularPressed.(UITexture).bin",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularPressed.(UITexture).xdb",
+          "EditorCommon\\ButtonRegular2\\ButtonRegularPressed.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Обычная кнопка. Чтобы добавить реакцию на нажатие:\n1) Добавьте созданный виджет в Children нужному виджету\n2) В свойствах кнопки кликните '...' напротив Variants\n3) Добавьте ОДИН вариант и впишите ему название реакции в Reaction. Остальные поля трогать не обязательно, они подтянутся из прототипа если не указаны\nТэг для подстановки текста в кнопку \"button_label\" через Button:SetVal или TextFileRef в варианте"
+      },
+      {
+        "Icon": "Icons\\CheckBoxStoneChecked.png",
+        "Name": "CheckBoxStone",
+        "MainFile": "EditorCommon\\CheckBoxes\\CheckBoxStone.Prototype.(WidgetButton).xdb",
+        "Files": [
+          "EditorCommon\\CheckBoxes\\CheckBoxStone.(UITexture).bin",
+          "EditorCommon\\CheckBoxes\\CheckBoxStone.(UITexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStone.(UITextureElement).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStone.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneChecked.(UITexture).bin",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneChecked.(UITexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneChecked.(UITextureElement).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneChecked.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneCheckedDisabled.(UITexture).bin",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneCheckedDisabled.(UITexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneCheckedDisabled.(UITextureElement).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneCheckedDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneDisabled.(UITexture).bin",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneDisabled.(UITexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneDisabled.(UITextureElement).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneHighlight.(UITexture).bin",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneHighlight.(UITexture).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneHighlight.(UITextureElement).xdb",
+          "EditorCommon\\CheckBoxes\\CheckBoxStoneHighlight.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Чекбокс. Чтобы добавить реакции на нажатие:\n1) Добавьте созданный виджет в Children нужному виджету\n2) В свойствах кнопки кликните '...' напротив Variants\n3) Добавьте ДВА варианта и впишите каждому название реакции в Reaction (первый варинт - реакция на \"поставить галку\", второй вариант - реакция на \"снять галку\"). Остальные поля трогать не обязательно, они подтянутся из прототипа если не указаны"
+      },
+      {
+        "Icon": "Icons\\ButtonScrollLeftNormal.png",
+        "Name": "ButtonScrollLeft",
+        "MainFile": "EditorCommon\\ScrollBars\\ButtonScrollLeft.Prototype.(WidgetButton).xdb",
+        "Files": [
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftNormal.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftNormal.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftNormal.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftNormal.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftPressed.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Кнопка влево. Чтобы добавить реакцию на нажатие:\n1) Добавьте созданный виджет в Children нужному виджету\n2) В свойствах кнопки кликните '...' напротив Variants\n3) Добавьте ОДИН вариант и впишите ему название реакции в Reaction. Остальные поля трогать не обязательно, они подтянутся из прототипа если не указаны"
+      },
+      {
+        "Icon": "Icons\\ButtonScrollLeftDoubleNormal.png",
+        "Name": "ButtonScrollLeftDouble",
+        "MainFile": "EditorCommon\\ScrollBars\\ButtonScrollLeftDouble.Prototype.(WidgetButton).xdb",
+        "Files": [
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleNormal.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleNormal.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleNormal.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoubleNormal.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoublePressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoublePressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoublePressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollLeftDoublePressed.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Кнопка влево в начало. Чтобы добавить реакцию на нажатие:\n1) Добавьте созданный виджет в Children нужному виджету\n2) В свойствах кнопки кликните '...' напротив Variants\n3) Добавьте ОДИН вариант и впишите ему название реакции в Reaction. Остальные поля трогать не обязательно, они подтянутся из прототипа если не указаны"
+      },
+      {
+        "Icon": "Icons\\ButtonScrollRightNormal.png",
+        "Name": "ButtonScrollRight",
+        "MainFile": "EditorCommon\\ScrollBars\\ButtonScrollRight.Prototype.(WidgetButton).xdb",
+        "Files": [
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightNormal.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightNormal.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightNormal.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightNormal.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightPressed.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Кнопка вправо. Чтобы добавить реакцию на нажатие:\n1) Добавьте созданный виджет в Children нужному виджету\n2) В свойствах кнопки кликните '...' напротив Variants\n3) Добавьте ОДИН вариант и впишите ему название реакции в Reaction. Остальные поля трогать не обязательно, они подтянутся из прототипа если не указаны"
+      },
+      {
+        "Icon": "Icons\\ButtonScrollRightDoubleNormal.png",
+        "Name": "ButtonScrollRightDouble",
+        "MainFile": "EditorCommon\\ScrollBars\\ButtonScrollRightDouble.Prototype.(WidgetButton).xdb",
+        "Files": [
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleNormal.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleNormal.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleNormal.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoubleNormal.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoublePressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoublePressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoublePressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ButtonScrollRightDoublePressed.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Кнопка вправо в конец. Чтобы добавить реакцию на нажатие:\n1) Добавьте созданный виджет в Children нужному виджету\n2) В свойствах кнопки кликните '...' напротив Variants\n3) Добавьте ОДИН вариант и впишите ему название реакции в Reaction. Остальные поля трогать не обязательно, они подтянутся из прототипа если не указаны"
+      },
+      {
+        "Icon": "Icons\\TabNormal.png",
+        "Name": "BottomTab",
+        "MainFile": "EditorCommon\\BottomTabs\\BottomTab.Prototype.(WidgetButton).xdb",
+        "Files": [
+          "EditorCommon\\BottomTabs\\TabDisabled.(UISingleTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabDisabled.(UITexture).bin",
+          "EditorCommon\\BottomTabs\\TabDisabled.(UITexture).xdb",
+          "EditorCommon\\BottomTabs\\TabDisabled.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabHighlight.(UISingleTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabHighlight.(UITexture).bin",
+          "EditorCommon\\BottomTabs\\TabHighlight.(UITexture).xdb",
+          "EditorCommon\\BottomTabs\\TabHighlight.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabLabelFormatDisabled.txt",
+          "EditorCommon\\BottomTabs\\TabLabelFormatNormal.txt",
+          "EditorCommon\\BottomTabs\\TabLabelFormatSelected.txt",
+          "EditorCommon\\BottomTabs\\TabNormal.(UISingleTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabNormal.(UITexture).bin",
+          "EditorCommon\\BottomTabs\\TabNormal.(UITexture).xdb",
+          "EditorCommon\\BottomTabs\\TabNormal.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabSelected.(UISingleTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabSelected.(UITexture).bin",
+          "EditorCommon\\BottomTabs\\TabSelected.(UITexture).xdb",
+          "EditorCommon\\BottomTabs\\TabSelected.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabSelectedDisabled.(UISingleTexture).xdb",
+          "EditorCommon\\BottomTabs\\TabSelectedDisabled.(UITexture).bin",
+          "EditorCommon\\BottomTabs\\TabSelectedDisabled.(UITexture).xdb",
+          "EditorCommon\\BottomTabs\\TabSelectedDisabled.(WidgetLayerTiledTexture).xdb"
+        ],
+        "Description": "Вкладка снизу. Реакция для первого варианта кнопки (вкладка не выбрана)\n<Reaction>tab_pressed</Reaction>\nВо втором варианте кнопки (вкладка выбрана) реакция не прописана. Тэг для подстановки текста в кнопку \"tab_label\" через Button:SetVal или TextFileRef в варианте"
+      }
+    ]
+  },
+  "WidgetControl3D": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
+  },
+  "WidgetEditLine": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty",
+        "Description": "Пустой WidgetEditLine. Обратите внимание, что для работы аддона в этом виджете должны быть обязательны заданы свойства: Cursor1Layer, Cursor2Layer, selectionLayer\nТакже в документации указано, что обязательно должны быть заданы свойства globalClassName и selectionClassName, но на текущий момент работает и без них"
+      },
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "EditLine",
+        "MainFile": "EditorCommon\\EditLine\\EditLine.Prototype.(WidgetEditLine).xdb",
+        "Files": [
+          "EditorCommon\\EditLine\\Cursor1.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\EditLine\\Cursor2.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\EditLine\\Selection.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "EditLine с минимальными необходимыми свойствами. Реакции не заданы"
+      }
+    ]
+  },
+  "WidgetEditBox": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty",
+        "Description": "Пустой WidgetEditBox. Обратите внимание, что для работы аддона в этом виджете должны быть обязательны заданы свойства:\nCursor1Layer, Cursor2Layer, selectionLayer"
+      },
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "EditBox",
+        "MainFile": "EditorCommon\\EditBox\\EditBox.Prototype.(WidgetEditBox).xdb",
+        "Files": [
+          "EditorCommon\\EditBox\\Cursor1.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\EditBox\\Cursor2.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\EditBox\\Selection.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "EditBox с минимальными необходимыми свойствами. Реакции не заданы"
+      },
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "ScrollableEditBox",
+        "MainFile": "EditorCommon\\EditBox\\ScrollableEditBox.Prototype.(WidgetEditBox).xdb",
+        "Files": [
+          "EditorCommon\\EditBox\\Cursor1.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\EditBox\\Cursor2.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\EditBox\\Selection.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\EditBox\\ScrollBarVertical.(WidgetGlideScrollBar).xdb",
+          "EditorCommon\\ScrollBars\\ScrollBarVertical.Prototype.(WidgetGlideScrollBar).xdb",
+          "EditorCommon\\ScrollBars\\ScrollUp.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollDown.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollSlider.(WidgetGlideSlider).xdb",
+          "EditorCommon\\ScrollBars\\ScrollThumb.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "EditBox с минимальными необходимыми свойствами и скроллбаром. Реакции не заданы"
+      }
+    ]
+  },
+  "WidgetScrollableContainer": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      },
+      {
+        "Icon": "Icons\\Container.png",
+        "Name": "Container",
+        "MainFile": "EditorCommon\\Containers\\Container.Prototype.(WidgetScrollableContainer).xdb",
+        "Files": [
+          "EditorCommon\\Containers\\Border.(WidgetPanel).xdb",
+          "EditorCommon\\Containers\\ScrollBarVertical.(WidgetGlideScrollBar).xdb",
+          "EditorCommon\\ScrollBars\\ScrollBarVertical.Prototype.(WidgetGlideScrollBar).xdb",
+          "EditorCommon\\ScrollBars\\ScrollUp.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollDown.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollSlider.(WidgetGlideSlider).xdb",
+          "EditorCommon\\ScrollBars\\ScrollThumb.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Самый простой контейнер"
+      }
+    ]
+  },
+  "WidgetTextContainer": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      },
+      {
+        "Icon": "Icons\\Container.png",
+        "Name": "TextContainer",
+        "MainFile": "EditorCommon\\Containers\\TextContainer.Prototype.(WidgetTextContainer).xdb",
+        "Files": [
+          "EditorCommon\\Containers\\TextContainerBorder.(WidgetPanel).xdb",
+          "EditorCommon\\Containers\\TextContainerScrollBar.(WidgetGlideScrollBar).xdb",
+          "EditorCommon\\Containers\\TextContainerFormat.txt",
+          "EditorCommon\\ScrollBars\\ScrollBarVertical.Prototype.(WidgetGlideScrollBar).xdb",
+          "EditorCommon\\ScrollBars\\ScrollUp.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollDown.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollSlider.(WidgetGlideSlider).xdb",
+          "EditorCommon\\ScrollBars\\ScrollThumb.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Текстовый контейнер. Для изменения стандартного форматирования создайте новый текстовый файл в кодировке UTF-16 LE и укажите его в созданном виджете в свойстве formatFileRef"
+      }
+    ]
+  },
+  "WidgetDiscreteScrollBar": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
+  },
+  "WidgetGlideScrollBar": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      },
+      {
+        "Icon": "Icons\\ScrollBarVertical.png",
+        "Name": "ScrollBarVertical",
+        "MainFile": "EditorCommon\\ScrollBars\\ScrollBarVertical.Prototype.(WidgetGlideScrollBar).xdb",
+        "Files": [
+          "EditorCommon\\ScrollBars\\ScrollUp.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollDown.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollSlider.(WidgetGlideSlider).xdb",
+          "EditorCommon\\ScrollBars\\ScrollThumb.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUp.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollUpPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDown.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollDownPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Вертикальный скроллбар, можно использовать в своих контейнерах"
+      },
+      {
+        "Icon": "Icons\\ScrollBarGorizontal.png",
+        "Name": "ScrollBarGorizontal",
+        "MainFile": "EditorCommon\\ScrollBars\\ScrollBarGorizontal.Prototype.(WidgetGlideScrollBar).xdb",
+        "Files": [
+          "EditorCommon\\ScrollBars\\ScrollLeft.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollRight.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\ScrollSliderL2R.(WidgetGlideSlider).xdb",
+          "EditorCommon\\ScrollBars\\ScrollThumbGorizontal.(WidgetButton).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollButtonHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeft.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeft.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeft.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeft.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollLeftPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRight.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRight.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRight.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightPressed.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightPressed.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightPressed.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollRightPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumb.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).bin",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITexture).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(UITextureElement).xdb",
+          "EditorCommon\\ScrollBars\\Textures\\ScrollThumbDisabled.(WidgetLayerSimpleTexture).xdb"
+        ],
+        "Description": "Горизонтальный скроллбар, можно использовать в своих контейнерах"
+      }
+    ]
+  },
+  "WidgetDiscreteSlider": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      },
+      {
+        "Icon": "Icons\\OptionsSlider.png",
+        "Name": "OptionsSlider",
+        "MainFile": "EditorCommon\\OptionsSlider\\Slider.Prototype.(WidgetDiscreteSlider).xdb",
+        "Files": [
+          "EditorCommon\\OptionsSlider\\ContentFrame.(UISingleTexture).xdb",
+          "EditorCommon\\OptionsSlider\\ContentFrame.(UITexture).bin",
+          "EditorCommon\\OptionsSlider\\ContentFrame.(UITexture).xdb",
+          "EditorCommon\\OptionsSlider\\ContentFrame.(WidgetLayerTiledTexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnDisabled.(UITexture).bin",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnDisabled.(UITexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnDisabled.(UITextureElement).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnDisabled.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnHighlight.(UITexture).bin",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnHighlight.(UITexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnHighlight.(UITextureElement).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnHighlight.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnNormal.(UITexture).bin",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnNormal.(UITexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnNormal.(UITextureElement).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnNormal.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnPressed.(UITexture).bin",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnPressed.(UITexture).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnPressed.(UITextureElement).xdb",
+          "EditorCommon\\OptionsSlider\\ScrollSliderBtnPressed.(WidgetLayerSimpleTexture).xdb",
+          "EditorCommon\\OptionsSlider\\SliderThumb.(WidgetButton).xdb"
+        ],
+        "Description": "Дискретный слайдер для опций. Реакции:\n<reactionChanged>slider_pressed</reactionChanged>"
+      }
+    ]
+  },
+  "WidgetGlideSlider": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
+  }
+}

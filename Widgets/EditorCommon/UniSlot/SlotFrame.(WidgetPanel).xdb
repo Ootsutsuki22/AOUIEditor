@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Header>
+		<Prototype href="SlotFrame/SlotFrame.Prototype.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Header>
+	<Children>
+		<Item href="SlotCount.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="SlotLocked.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+</WidgetPanel>

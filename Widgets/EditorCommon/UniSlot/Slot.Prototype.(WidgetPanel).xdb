@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Slot</Name>
+	<Children>
+		<Item href="SlotFrame.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="SlotQuality.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="SlotButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="SlotBlink.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="SlotAutocast.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />		
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>64</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>64</Size>
+		</Y>
+	</Placement>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetPanel>

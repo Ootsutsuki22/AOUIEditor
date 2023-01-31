@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<BackLayer href="MsgBoxShaded.(WidgetLayerTiledTexture).xdb" />
+	<Placement>
+		<X>
+			<Size>200</Size>
+		</X>
+		<Y>
+			<Size>200</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

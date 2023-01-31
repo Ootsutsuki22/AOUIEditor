@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Placement>
+		<X>
+			<Size>23</Size>
+		</X>
+		<Y>
+			<Size>23</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="Textures/ButtonScrollHighlight.(WidgetLayerSimpleTexture).xdb" />
+			<StateNormal>
+				<LayerMain href="Textures/ButtonScrollRightDoubleNormal.(WidgetLayerSimpleTexture).xdb" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="Textures/ButtonScrollRightDoublePressed.(WidgetLayerSimpleTexture).xdb" />
+			</StatePushed>
+			<StateDisabled>
+				<LayerMain href="Textures/ButtonScrollRightDoubleDisabled.(WidgetLayerSimpleTexture).xdb" />
+			</StateDisabled>
+		</Item>
+	</Variants>
+</WidgetButton>

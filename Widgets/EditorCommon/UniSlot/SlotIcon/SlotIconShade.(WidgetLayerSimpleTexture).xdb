@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetLayerSimpleTexture>
+	<Color>0xff000000</Color>
+	<Grayed>false</Grayed>
+	<BlendEffect>BLEND_EFFECT_HIGHLIGHT</BlendEffect>
+	<flatPlacement>false</flatPlacement>
+	<lazyLoad>false</lazyLoad>
+	<textureItem href="SlotIconShade.(UITextureElement).xdb#xpointer(/UITextureElement)" />
+	<textureMask href="" />
+	<Scaling>true</Scaling>
+</WidgetLayerSimpleTexture>

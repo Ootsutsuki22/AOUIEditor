@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Priority>250</Priority>
+	<Placement>
+		<X>
+			<Size>128</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Size>40</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<TextTag>tab_label</TextTag>
+	<Variants>
+		<Item>
+			<LayerHighlight href="TabHighlight.(WidgetLayerTiledTexture).xdb" />
+			<PushedOffset x="2" y="2" />
+			<StateNormal>
+				<LayerMain href="TabNormal.(WidgetLayerTiledTexture).xdb" />
+				<FormatFileRef href="TabLabelFormatNormal.txt" />
+			</StateNormal>
+			<StateHighlighted>
+				<FormatFileRef href="TabLabelFormatSelected.txt" />
+			</StateHighlighted>
+			<StateDisabled>
+				<LayerMain href="TabDisabled.(WidgetLayerTiledTexture).xdb" />
+				<FormatFileRef href="TabLabelFormatDisabled.txt" />
+			</StateDisabled>
+			<Reaction>tab_pressed</Reaction>
+			<ReactionOnUp>true</ReactionOnUp>
+		</Item>
+		<Item>
+			<StateNormal>
+				<LayerMain href="TabSelected.(WidgetLayerTiledTexture).xdb" />
+				<FormatFileRef href="TabLabelFormatSelected.txt" />
+			</StateNormal>
+			<StateDisabled>
+				<LayerMain href="TabSelectedDisabled.(WidgetLayerTiledTexture).xdb" />
+				<FormatFileRef href="TabLabelFormatDisabled.txt" />
+			</StateDisabled>
+		</Item>
+	</Variants>
+	<TextStyle>
+		<wrapText>false</wrapText>
+		<Align>ALIGNY_MIDDLE</Align>
+	</TextStyle>
+</WidgetButton>

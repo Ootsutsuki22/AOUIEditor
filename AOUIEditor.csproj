@@ -1,0 +1,1174 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DockPanelSuite" Version="3.1.0" />
+    <PackageReference Include="DockPanelSuite.ThemeVS2015" Version="3.1.0" />
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.1.303" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Content\SimpleEffect.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\BottomTab.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabDisabled.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabDisabled.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabHighlight.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabHighlight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabHighlight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabHighlight.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabLabelFormatDisabled.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabLabelFormatNormal.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabLabelFormatSelected.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabNormal.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabNormal.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabNormal.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabNormal.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelected.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelected.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelected.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelected.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelectedDisabled.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelectedDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelectedDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\BottomTabs\TabSelectedDisabled.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonFormatDisabled.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonFormatNormal.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegular.Prototype.(WidgetButton).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularDisabled.(UISingleTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularDisabled.(UITexture).bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularDisabled.(UITexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularDisabled.(WidgetLayerTiledTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularHighlighted.(UISingleTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularHighlighted.(UITexture).bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularHighlighted.(UITexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularHighlighted.(WidgetLayerTiledTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularNormal.(UISingleTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularNormal.(UITexture).bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularNormal.(UITexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularNormal.(WidgetLayerTiledTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularPressed.(UISingleTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularPressed.(UITexture).bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularPressed.(UITexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ButtonRegular2\ButtonRegularPressed.(WidgetLayerTiledTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStone.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStone.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStone.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStone.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStone.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneChecked.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneChecked.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneChecked.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneChecked.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneCheckedDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneCheckedDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneCheckedDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneCheckedDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneHighlight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneHighlight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneHighlight.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CheckBoxes\CheckBoxStoneHighlight.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Containers\Border.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Containers\Container.Prototype.%28WidgetScrollableContainer%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Containers\ScrollBarVertical.%28WidgetGlideScrollBar%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Containers\TextContainer.Prototype.%28WidgetTextContainer%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Containers\TextContainerBorder.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Containers\TextContainerFormat.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Containers\TextContainerScrollBar.%28WidgetGlideScrollBar%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ContentFrame\ContentFrame.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ContentFrame\ContentFrame.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ContentFrame\ContentFrame.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ContentFrame\ContentFrame.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ContentFrame\ContentFrame.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCross.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCross.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossHighlight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossHighlight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossHighlight.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossHighlight.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossNormal.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossNormal.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossNormal.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossNormal.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\CornerCrossPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\GoldenCorner.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\GoldenCorner.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\GoldenCorner.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\GoldenCorner.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\CornerCross\GoldenCorner.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditBox\Cursor1.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditBox\Cursor2.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditBox\EditBox.Prototype.%28WidgetEditBox%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditBox\ScrollableEditBox.Prototype.%28WidgetEditBox%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditBox\ScrollBarVertical.%28WidgetGlideScrollBar%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditBox\Selection.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditLine\Cursor1.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditLine\Cursor2.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditLine\EditLine.Prototype.%28WidgetEditLine%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\EditLine\Selection.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ListEntry\ListEntry.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ListEntry\ListEntry.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ListEntry\ListEntry.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ListEntry\ListEntry.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ListEntry\ListEntry.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxLight.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxLight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxLight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxLight.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxLight.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ContentFrame.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ContentFrame.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ContentFrame.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ContentFrame.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnHighlight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnHighlight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnHighlight.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnHighlight.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnNormal.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnNormal.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnNormal.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnNormal.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\ScrollSliderBtnPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\Slider.Prototype.%28WidgetDiscreteSlider%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\OptionsSlider\SliderThumb.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ButtonScrollLeft.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ButtonScrollLeftDouble.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ButtonScrollRight.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ButtonScrollRightDouble.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollBarBackground.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollBarGorizontal.Prototype.%28WidgetGlideScrollBar%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollBarVertical.Prototype.%28WidgetGlideScrollBar%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollDown.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollLeft.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollRight.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollSlider.%28WidgetGlideSlider%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollSliderL2R.%28WidgetGlideSlider%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollThumb.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollThumbGorizontal.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\ScrollUp.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollHighlight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollHighlight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollHighlight.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollHighlight.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleNormal.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleNormal.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleNormal.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoubleNormal.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoublePressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoublePressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoublePressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftDoublePressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftNormal.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftNormal.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftNormal.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftNormal.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollLeftPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleNormal.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleNormal.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleNormal.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoubleNormal.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoublePressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoublePressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoublePressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightDoublePressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightNormal.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightNormal.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightNormal.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightNormal.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ButtonScrollRightPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollBarVertical.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollBarVertical.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollBarVertical.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollBarVertical.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollButtonHighlight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollButtonHighlight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollButtonHighlight.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollButtonHighlight.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDown.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDown.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDown.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDown.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollDownPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeft.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeft.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeft.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeft.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollLeftPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRight.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRight.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollRightPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumb.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumb.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumb.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumb.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumbDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumbDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumbDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollThumbDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUp.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUp.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUp.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUp.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\ScrollBars\Textures\ScrollUpPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\Slot.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotAutocast.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotAutocast\SlotAutocast.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotAutocast\SlotAutocast.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotAutocast\SlotAutocast.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotAutocast\SlotAutocast.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotAutocast\SlotAutocast.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotBlink.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotBlink\SlotBlink.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotBlink\SlotBlink.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotBlink\SlotBlink.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotBlink\SlotBlink.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotBlink\SlotBlink.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotButton.Prototype.%28WidgetButton%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotHighlight.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotHighlight.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotHighlight.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotHighlight.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotPressed.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotPressed.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotPressed.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotButton\SlotPressed.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotCount.%28WidgetTextView%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotDisabled.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotDisabled.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotDisabled.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotDisabled.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotFrame.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotFrame.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotFrame.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotFrame.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotFrame.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotFrame\SlotIcon.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIcon.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIcon.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIcon.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIcon.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIcon.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIconShade.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIconShade.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIconShade.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotIcon\SlotIconShade.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotLocked.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotLocked\SlotLocked.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotLocked\SlotLocked.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQuality.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityDown.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityDown.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityDown.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityDown.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityUp.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityUp.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityUp.%28UITextureElement%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotQuality\SlotQualityUp.%28WidgetLayerSimpleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotTextLabel\SlotCount.Prototype.%28WidgetTextView%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotTextLabel\SlotCount.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotTextLabel\SlotCountFormat.%28UIRelatedTexts%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotTextLabel\SlotCountFormatExtended.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotTextLabel\SlotCountFormatNormal.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\UniSlot\SlotTextLabel\SlotCountValue.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowFrame\Frame.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowFrame\Frame.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowFrame\Frame.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowFrame\Frame.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowFrame\Frame.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowHeader\HeaderText.%28WidgetTextView%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowHeader\HeaderText.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowHeader\TiledHeader.%28UISingleTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowHeader\TiledHeader.%28UITexture%29.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowHeader\TiledHeader.%28UITexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowHeader\TiledHeader.%28WidgetLayerTiledTexture%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\WindowHeader\WindowHeader.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Window\GoldenCorner.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Window\Window.Prototype.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Window\WindowHeader.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\Window\WindowPanel.%28WidgetPanel%29.xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ButtonRegularNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ButtonScrollLeftDoubleNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ButtonScrollLeftNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ButtonScrollRightDoubleNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ButtonScrollRightNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\CheckBoxStoneChecked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\Container.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ContentFrame.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\Empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\Frame.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\GoldenCorner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ListEntry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\MsgBoxLight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\MsgBoxShaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxShaded.(UISingleTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxShaded.(UITexture).bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxShaded.(UITexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxShaded.(WidgetLayerTiledTexture).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\EditorCommon\MsgBox\MsgBoxShaded.Prototype.(WidgetPanel).xdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\OptionsSlider.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ScrollBarBackground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ScrollBarGorizontal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\ScrollBarVertical.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\TabNormal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\TiledHeader.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\UniSlot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Icons\Window.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Widgets\Prototypes.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\ScriptMain.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\segoeui.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\TiledEffect.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

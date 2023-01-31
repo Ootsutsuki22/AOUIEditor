@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Name>Count</Name>
+	<Priority>25</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>2</Pos>
+			<HighPos>2</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<TransparentInput>true</TransparentInput>
+	<FormatFileRef href="SlotCount.txt" />
+	<TextValues>
+		<Item>
+			<Tag>value</Tag>
+			<TagValueFileRef href="SlotCountValue.txt" />
+		</Item>
+	</TextValues>
+</WidgetTextView>

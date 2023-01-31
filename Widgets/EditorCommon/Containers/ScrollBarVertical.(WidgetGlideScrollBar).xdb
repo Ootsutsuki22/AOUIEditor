@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetGlideScrollBar>
+	<Header>
+		<Prototype href="../ScrollBars/ScrollBarVertical.Prototype.(WidgetGlideScrollBar).xdb" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+		</X>
+	</Placement>
+</WidgetGlideScrollBar>

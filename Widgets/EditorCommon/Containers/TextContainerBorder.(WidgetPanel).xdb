@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<HighPos>23</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+</WidgetPanel>

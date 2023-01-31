@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextContainer>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Priority>200</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<border href="TextContainerBorder.(WidgetPanel).xdb" />
+	<widgetsArrangement>WIDGETS_ARRANGEMENT_T2B</widgetsArrangement>
+	<scrollBar href="TextContainerScrollBar.(WidgetGlideScrollBar).xdb" />
+	<elementsInterval>0</elementsInterval>
+	<formatFileRef href="TextContainerFormat.txt" />
+	<defaultTag>text</defaultTag>
+</WidgetTextContainer>

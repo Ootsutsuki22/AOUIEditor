@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<BackLayer href="Frame.(WidgetLayerTiledTexture).xdb" />
+	<Placement>
+		<X>
+			<Size>384</Size>
+		</X>
+		<Y>
+			<Size>286</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetEditLine>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Priority>250</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>160</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>24</Size>
+		</Y>
+	</Placement>
+	<selectionLayer href="Selection.(WidgetLayerSimpleTexture).xdb" />
+	<Cursor1Layer href="Cursor1.(WidgetLayerSimpleTexture).xdb" />
+	<Cursor2Layer href="Cursor2.(WidgetLayerSimpleTexture).xdb" />
+	<globalClassName>EditLineGlobal</globalClassName>
+	<selectionClassName>EditLineSelection</selectionClassName>
+</WidgetEditLine>

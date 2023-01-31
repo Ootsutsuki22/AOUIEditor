@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Header>
+		<Prototype href="../WindowFrame/Frame.Prototype.(WidgetPanel).xdb" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>14</Pos>
+			<HighPos>25</HighPos>
+		</Y>
+	</Placement>
+</WidgetPanel>

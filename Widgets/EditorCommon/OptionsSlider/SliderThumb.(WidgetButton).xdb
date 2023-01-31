@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Placement>
+		<X>
+			<Size>36</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>24</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="ScrollSliderBtnHighlight.(WidgetLayerSimpleTexture).xdb" />
+			<StateNormal>
+				<LayerMain href="ScrollSliderBtnNormal.(WidgetLayerSimpleTexture).xdb" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="ScrollSliderBtnPressed.(WidgetLayerSimpleTexture).xdb" />
+			</StatePushed>
+			<StateDisabled>
+				<LayerMain href="ScrollSliderBtnDisabled.(WidgetLayerSimpleTexture).xdb" />
+			</StateDisabled>
+		</Item>
+	</Variants>
+</WidgetButton>

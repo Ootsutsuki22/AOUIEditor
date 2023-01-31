@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITextureElement>
+	<singleTexture href="ButtonScrollLeftDisabled.(UITexture).xdb#xpointer(/UITexture)" />
+	<permanentCache>0</permanentCache>
+	<sourceFile href="ButtonScrollLeftDisabled.tga" />
+	<sourceFileCRC>1003125820</sourceFileCRC>
+</UITextureElement>

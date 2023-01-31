@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Header>
+		<Prototype href="../CornerCross/GoldenCorner.Prototype.(WidgetPanel).xdb" />
+	</Header>
+	<Priority>500</Priority>
+	<Placement>
+		<Y>
+			<Pos>14</Pos>
+		</Y>
+	</Placement>
+</WidgetPanel>

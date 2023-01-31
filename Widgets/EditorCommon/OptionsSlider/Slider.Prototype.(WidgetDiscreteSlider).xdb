@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetDiscreteSlider>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<BackLayer href="ContentFrame.(WidgetLayerTiledTexture).xdb" />
+	<Placement>
+		<X>
+			<Size>236</Size>
+		</X>
+		<Y>
+			<Size>16</Size>
+		</Y>
+	</Placement>
+	<clipContent>false</clipContent>
+	<sliderButton href="SliderThumb.(WidgetButton).xdb" />
+	<moveArrangement>WIDGETS_ARRANGEMENT_L2R</moveArrangement>
+	<reactionChanged>slider_pressed</reactionChanged>
+	<stepsCount>9</stepsCount>
+</WidgetDiscreteSlider>

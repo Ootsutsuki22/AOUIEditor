@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITextureElement>
+	<singleTexture href="SlotBlink.(UITexture).xdb#xpointer(/UITexture)" />
+	<permanentCache>0</permanentCache>
+	<sourceFile href="SlotBlink.tga" />
+	<sourceFileCRC>-1507160392</sourceFileCRC>
+</UITextureElement>

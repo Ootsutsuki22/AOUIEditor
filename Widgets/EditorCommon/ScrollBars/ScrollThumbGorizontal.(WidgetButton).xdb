@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>24</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<StateNormal>
+				<LayerMain href="Textures/ScrollThumb.(WidgetLayerSimpleTexture).xdb" />
+			</StateNormal>
+			<StateDisabled>
+				<LayerMain href="Textures/ScrollThumbDisabled.(WidgetLayerSimpleTexture).xdb" />
+			</StateDisabled>
+		</Item>
+	</Variants>
+</WidgetButton>

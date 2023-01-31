@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Name>Button</Name>
+	<Priority>70</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>false</IgnoreDblClick>
+	<reactionOnPointing>slot_over</reactionOnPointing>
+	<Variants>
+		<Item>
+			<LayerHighlight href="SlotHighlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			<StatePushed>
+				<LayerMain href="SlotPressed.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StatePushed>
+			<Reaction>slot_pressed</Reaction>
+			<ReactionRightClick>slot_pressed_rmb</ReactionRightClick>
+			<reactionDblClick>slot_pressed_rmb</reactionDblClick>
+			<ReactionOnUp>true</ReactionOnUp>
+		</Item>
+	</Variants>
+</WidgetButton>

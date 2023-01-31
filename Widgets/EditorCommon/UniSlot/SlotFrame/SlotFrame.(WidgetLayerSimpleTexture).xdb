@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetLayerSimpleTexture>
+	<Color>0xff8e9d5f</Color>
+	<Grayed>false</Grayed>
+	<BlendEffect>BLEND_EFFECT_ALPHABLND</BlendEffect>
+	<flatPlacement>false</flatPlacement>
+	<textureItem href="SlotFrame.(UITextureElement).xdb#xpointer(/UITextureElement)" />
+	<textureMask href="" />
+	<Scaling>true</Scaling>
+</WidgetLayerSimpleTexture>

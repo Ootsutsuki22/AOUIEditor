@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetGlideScrollBar>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Placement>
+		<X>
+			<Size>23</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<decButton href="ScrollUp.(WidgetButton).xdb" />
+	<incButton href="ScrollDown.(WidgetButton).xdb" />
+	<slider href="ScrollSlider.(WidgetGlideSlider).xdb" />
+</WidgetGlideScrollBar>

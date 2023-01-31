@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Header>
+		<Prototype href="../WindowHeader/WindowHeader.Prototype.(WidgetPanel).xdb" />
+	</Header>
+	<Name>WindowHeader</Name>
+	<Priority>300</Priority>
+	<Placement>
+		<Y>
+			<Pos>0</Pos>
+		</Y>
+	</Placement>
+</WidgetPanel>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>HeaderText</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>48</Pos>
+			<HighPos>45</HighPos>
+			<Size>0</Size>
+		</X>
+		<Y>
+			<Pos>7</Pos>
+			<Size>22</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="HeaderText.txt" />
+	<TextStyle>
+		<wrapText>false</wrapText>
+		<showClippedSymbol>false</showClippedSymbol>
+		<Align>ALIGNY_DEFAULT</Align>
+	</TextStyle>
+	<TransparentInput>true</TransparentInput>
+</WidgetTextView>
