@@ -76,7 +76,7 @@
             this.Controls.Add(this.widgetTree);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TreeForm";
-            this.Text = "TreeForm";
+            this.Text = "Дерево виджетов";
             this.ResumeLayout(false);
 
         }
