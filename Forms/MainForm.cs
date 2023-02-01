@@ -7,6 +7,8 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,6 +32,9 @@ namespace AOUIEditor
             InitializeComponent();
 
             Prototype.Init();
+
+            Version version = Assembly.GetEntryAssembly().GetName().Version;
+            versionLabel.Text = "v" + version.ToString();
 
             ResolutionComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             ResolutionComboBox.SelectedIndex = 0;
@@ -94,6 +99,14 @@ namespace AOUIEditor
         private void addNewWidgetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CreateWidget();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (AboutForm form = new AboutForm())
+            {
+                form.ShowDialog();
+            }
         }
 
         #endregion
@@ -382,6 +395,7 @@ namespace AOUIEditor
                     TreeForm.RefreshTree();
                     Item.Sort();
                     addNewToolStripButton.Enabled = true;
+                    this.Text = "AOUIEditor - " + Project.Addon.Name;
                 }
             }
         }
@@ -399,6 +413,7 @@ namespace AOUIEditor
                     TreeForm.RefreshTree();
                     Item.Sort();
                     addNewToolStripButton.Enabled = true;
+                    this.Text = "AOUIEditor - " + Project.Addon.Name;
                 }
             }
         }

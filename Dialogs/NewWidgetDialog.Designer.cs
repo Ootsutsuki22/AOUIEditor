@@ -322,7 +322,7 @@
             this.MinimizeBox = false;
             this.Name = "NewWidgetDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NewWidgetDialog";
+            this.Text = "Создать новый файл виджета";
             this.ResumeLayout(false);
             this.PerformLayout();
 
