@@ -40,12 +40,18 @@ namespace AOUIEditor.ResourceSystem
         public TextObject[] ScriptFileRefs { get; set; }
 
         [Category("UIAddon")]
-        [Description("Идентификатор главной формы")]
-        public string MainFormId { get; set; }
+        [Description("Форма")]
+        public WidgetForm Form { get; set; }
 
+        /* DEPRECATED 14.1
+        
         [Category("UIAddon")]
         [Description("Список форм")]
         public UIAddonForm[] Forms { get; set; }
+
+        [Category("UIAddon")]
+        [Description("Идентификатор главной формы")]
+        public string MainFormId { get; set; }
 
         [Category("UIAddon")]
         public UIRelatedVisObjects visObjects { get; set; }
@@ -57,22 +63,23 @@ namespace AOUIEditor.ResourceSystem
         public UIRelatedTexts texts { get; set; }
 
         [Category("UIAddon")]
-        public UIRelatedTextsGroup[] textsGroups { get; set; }
-
-        [Category("UIAddon")]
         public UIRelatedTextures textures { get; set; }
-
-        [Category("UIAddon")]
-        public UIRelatedTexturesGroup[] texturesGroups { get; set; }
 
         [Category("UIAddon")]
         public UIRelatedSounds sounds { get; set; }
 
         [Category("UIAddon")]
-        public UIRelatedSoundsGroup[] soundsGroups { get; set; }
+        public UIRelatedDecalObjects decalObjects { get; set; }
+        */
 
         [Category("UIAddon")]
-        public UIRelatedDecalObjects decalObjects { get; set; }
+        public UIRelatedTextsGroup[] textsGroups { get; set; }
+
+        [Category("UIAddon")]
+        public UIRelatedTexturesGroup[] texturesGroups { get; set; }
+
+        [Category("UIAddon")]
+        public UIRelatedSoundsGroup[] soundsGroups { get; set; }
 
         public UIAddon()
         {

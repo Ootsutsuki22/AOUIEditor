@@ -251,12 +251,9 @@ namespace AOUIEditor
             if (xdb.GetType() == typeof(UIAddon))
             {
                 UIAddon addon = (UIAddon)xdb;
-                if (addon.Forms == null)
+                if (addon.Form == null)
                     return;
-                for (int i = 0; i < addon.Forms.Length; i++)
-                {
-                    Add(parent, addon.Forms[i].Form, false, true);
-                }
+                Add(parent, addon.Form, false, true);
             }
 
             if (xdb.GetType() == typeof(Widget) || xdb.GetType().IsSubclassOf(typeof(Widget)))
