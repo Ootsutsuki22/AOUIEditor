@@ -76,18 +76,14 @@ namespace AOUIEditor
             Addon.directory = Location;
             if (addForm)
             {
-                Addon.MainFormId = "Main";
-                Addon.Forms = new UIAddonForm[1];
-                Addon.Forms[0] = new UIAddonForm();
-                Addon.Forms[0].Id = "Main";
-                Addon.Forms[0].Form = new WidgetForm();
-                Addon.Forms[0].Form.file = "MainForm.(WidgetForm).xdb";
-                Addon.Forms[0].Form.directory = Path.Combine(Location, "Widgets");
-                Addon.Forms[0].Form.Name = name;
-                Addon.Forms[0].Form.Priority = 4000;
-                Addon.Forms[0].Form.Placement.X.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
-                Addon.Forms[0].Form.Placement.Y.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
-                Addon.Forms[0].Form.PickChildrenOnly = true;
+                Addon.Form = new WidgetForm();
+                Addon.Form.file = "MainForm.(WidgetForm).xdb";
+                Addon.Form.directory = Path.Combine(Location, "Widgets");
+                Addon.Form.Name = name;
+                Addon.Form.Priority = 4000;
+                Addon.Form.Placement.X.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
+                Addon.Form.Placement.Y.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
+                Addon.Form.PickChildrenOnly = true;
             }
             Addon.ScriptFileRefs = new TextObject[1];
             Addon.ScriptFileRefs[0] = new TextObject();
