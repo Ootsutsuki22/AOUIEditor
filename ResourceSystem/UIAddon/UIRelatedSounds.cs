@@ -40,12 +40,4 @@ namespace AOUIEditor.ResourceSystem
             return GetType().Name;
         }
     }
-
-    public class FMODProject : XdbObject
-    {
-        protected override bool ShouldSave()
-        {
-            return false;
-        }
-    }
 }

@@ -34,6 +34,7 @@ namespace AOUIEditor.ResourceSystem
         UISingleTexture,
         UITextureElement,
         UITexture,
-        UIWidgetSound
+        UIWidgetSound,
+        FMODProject
     }
 }
