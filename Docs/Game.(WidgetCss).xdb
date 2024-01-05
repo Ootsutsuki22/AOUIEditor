@@ -939,6 +939,48 @@
 			</Items>
 		</Item>
 		<Item>
+			<Name>Dragon</Name>
+			<Items>
+				<Item>
+					<Key>color</Key>
+					<Value>0xfffb5ead</Value>
+				</Item>
+				<Item>
+					<Key>shadow</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>shadowcolor</Key>
+					<Value>0x80e155e1</Value>
+				</Item>
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x50000000</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>DragonWithoutShadow</Name>
+			<Items>
+				<Item>
+					<Key>color</Key>
+					<Value>0xfffb5ead</Value>
+				</Item>
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x50000000</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
 			<Name>JunkCursed</Name>
 			<Items>
 				<Item>
@@ -1119,6 +1161,31 @@
 				<Item>
 					<Key>color</Key>
 					<Value>0xffe0ff40</Value>
+				</Item>
+				<Item>
+					<Key>shadow</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>shadowcolor</Key>
+					<Value>0x80ff0000</Value>
+				</Item>
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x80000000</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>DragonCursed</Name>
+			<Items>
+				<Item>
+					<Key>color</Key>
+					<Value>0xfffb5ead</Value>
 				</Item>
 				<Item>
 					<Key>shadow</Key>
@@ -2596,6 +2663,35 @@
 			</Items>
 		</Item>
 		<Item>
+			<Name>EventCalendarMoneyCount</Name>
+			<Items>
+				<Item>
+					<Key>fontname</Key>
+					<Value>AllodsFantasy</Value>
+				</Item>
+				<Item>
+					<Key>color</Key>
+					<Value>0xff404c0c</Value>
+				</Item>
+				<Item>
+					<Key>alignx</Key>
+					<Value>right</Value>
+				</Item>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>14</Value>
+				</Item>
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x28f9e4b5</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
 			<Name>EditLineMoneyCount</Name>
 			<Items>
 				<Item>
@@ -3110,7 +3206,7 @@
 				</Item>
 			</Items>
 		</Item>
-		<Item>
+				<Item>
 			<Name>Size10</Name>
 			<Items>
 				<Item>
@@ -3192,11 +3288,29 @@
 			</Items>
 		</Item>
 		<Item>
+			<Name>Size19</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>19</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
 			<Name>Size20</Name>
 			<Items>
 				<Item>
 					<Key>fontsize</Key>
 					<Value>20</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size21</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>21</Value>
 				</Item>
 			</Items>
 		</Item>
@@ -3210,11 +3324,200 @@
 			</Items>
 		</Item>
 		<Item>
+			<Name>Size23</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>23</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
 			<Name>Size24</Name>
 			<Items>
 				<Item>
 					<Key>fontsize</Key>
 					<Value>24</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size25</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>25</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size26</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>26</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size27</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>27</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size28</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>28</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size29</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>29</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size30</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>30</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size31</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>31</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size32</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>32</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size33</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>33</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size34</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>34</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size35</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>35</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size36</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>36</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size37</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>37</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size38</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>38</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size39</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>39</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size40</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>40</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size41</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>41</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size42</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>42</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size43</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>43</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Size44</Name>
+			<Items>
+				<Item>
+					<Key>fontsize</Key>
+					<Value>44</Value>
 				</Item>
 			</Items>
 		</Item>
@@ -3323,6 +3626,15 @@
 				<Item>
 					<Key>color</Key>
 					<Value>0xff55e1e1</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>LogColorCyan</Name>
+			<Items>
+				<Item>
+					<Key>color</Key>
+					<Value>0xff00ffd2</Value>
 				</Item>
 			</Items>
 		</Item>
@@ -3945,6 +4257,33 @@
 				<Item>
 					<Key>outlinecolor</Key>
 					<Value>0x11ffffff</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Bold</Name>
+			<Items>
+				<Item>
+					<Key>fontname</Key>
+					<Value>ContentNarrowBold</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>BoldItalic</Name>
+			<Items>
+				<Item>
+					<Key>fontname</Key>
+					<Value>ContentNarrowBoldItalic</Value>
+				</Item>
+			</Items>
+		</Item>
+		<Item>
+			<Name>Italic</Name>
+			<Items>
+				<Item>
+					<Key>fontname</Key>
+					<Value>ContentNarrowItalic</Value>
 				</Item>
 			</Items>
 		</Item>
