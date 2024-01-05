@@ -813,5 +813,45 @@
         "Name": "Empty"
       }
     ]
+  },
+  "UIRelatedTexts": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
+  },
+  "UIRelatedTextures": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
+  },
+  "UIRelatedSounds": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
+  },
+  "FMODProject": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
+  },
+  "WidgetCss": {
+    "Prototypes": [
+      {
+        "Icon": "Icons\\Empty.png",
+        "Name": "Empty"
+      }
+    ]
   }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("WidgetForm");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("WidgetPanel");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("WidgetButton");
@@ -42,34 +42,38 @@
             System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("WidgetDiscreteSlider");
             System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("WidgetGlideSlider");
             System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("WidgetControl3D");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("UIRelatedTexts");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("UIRelatedTextures");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("UIRelatedSounds");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("FMODProject");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("WidgetCss");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewWidgetDialog));
-            this.widgetTypeTree = new System.Windows.Forms.TreeView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.protoListView = new System.Windows.Forms.ListView();
-            this.protoImageList = new System.Windows.Forms.ImageList(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.browseButton = new System.Windows.Forms.Button();
-            this.locationTextBox = new System.Windows.Forms.TextBox();
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.okButton = new System.Windows.Forms.Button();
-            this.protoTextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.makePrototypeCheckbox = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
+            widgetTypeTree = new System.Windows.Forms.TreeView();
+            imageList1 = new System.Windows.Forms.ImageList(components);
+            label1 = new System.Windows.Forms.Label();
+            protoListView = new System.Windows.Forms.ListView();
+            protoImageList = new System.Windows.Forms.ImageList(components);
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            nameTextBox = new System.Windows.Forms.TextBox();
+            browseButton = new System.Windows.Forms.Button();
+            locationTextBox = new System.Windows.Forms.TextBox();
+            cancelButton = new System.Windows.Forms.Button();
+            okButton = new System.Windows.Forms.Button();
+            protoTextBox = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            makePrototypeCheckbox = new System.Windows.Forms.CheckBox();
+            SuspendLayout();
             // 
             // widgetTypeTree
             // 
-            this.widgetTypeTree.HideSelection = false;
-            this.widgetTypeTree.ImageIndex = 0;
-            this.widgetTypeTree.ImageList = this.imageList1;
-            this.widgetTypeTree.Location = new System.Drawing.Point(14, 36);
-            this.widgetTypeTree.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.widgetTypeTree.Name = "widgetTypeTree";
+            widgetTypeTree.HideSelection = false;
+            widgetTypeTree.ImageIndex = 0;
+            widgetTypeTree.ImageList = imageList1;
+            widgetTypeTree.Location = new System.Drawing.Point(12, 27);
+            widgetTypeTree.Name = "widgetTypeTree";
             treeNode1.ImageKey = "WindowsForm.png";
             treeNode1.Name = "WidgetForm";
             treeNode1.SelectedImageKey = "WindowsForm.png";
@@ -122,210 +126,204 @@
             treeNode13.Name = "WidgetControl3D";
             treeNode13.SelectedImageKey = "TransformPositionCursor.png";
             treeNode13.Text = "WidgetControl3D";
-            this.widgetTypeTree.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13});
-            this.widgetTypeTree.SelectedImageIndex = 0;
-            this.widgetTypeTree.Size = new System.Drawing.Size(282, 756);
-            this.widgetTypeTree.TabIndex = 0;
+            treeNode14.Name = "UIRelatedTexts";
+            treeNode14.Text = "UIRelatedTexts";
+            treeNode15.Name = "UIRelatedTextures";
+            treeNode15.Text = "UIRelatedTextures";
+            treeNode16.Name = "UIRelatedSounds";
+            treeNode16.Text = "UIRelatedSounds";
+            treeNode17.Name = "FMODProject";
+            treeNode17.Text = "FMODProject";
+            treeNode18.Name = "WidgetCss";
+            treeNode18.Text = "WidgetCss";
+            widgetTypeTree.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { treeNode1, treeNode2, treeNode3, treeNode4, treeNode5, treeNode6, treeNode7, treeNode8, treeNode9, treeNode10, treeNode11, treeNode12, treeNode13, treeNode14, treeNode15, treeNode16, treeNode17, treeNode18 });
+            widgetTypeTree.SelectedImageIndex = 0;
+            widgetTypeTree.Size = new System.Drawing.Size(247, 568);
+            widgetTypeTree.TabIndex = 0;
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "CSApplication.png");
-            this.imageList1.Images.SetKeyName(1, "FolderClosed.png");
-            this.imageList1.Images.SetKeyName(2, "WindowsForm.png");
-            this.imageList1.Images.SetKeyName(3, "Panel.png");
-            this.imageList1.Images.SetKeyName(4, "Label.png");
-            this.imageList1.Images.SetKeyName(5, "ButtonClick.png");
-            this.imageList1.Images.SetKeyName(6, "TextBox.png");
-            this.imageList1.Images.SetKeyName(7, "TextArea.png");
-            this.imageList1.Images.SetKeyName(8, "ScrollBox.png");
-            this.imageList1.Images.SetKeyName(9, "ListBox.png");
-            this.imageList1.Images.SetKeyName(10, "ScrollViewer.png");
-            this.imageList1.Images.SetKeyName(11, "Slider.png");
-            this.imageList1.Images.SetKeyName(12, "TransformPositionCursor.png");
+            imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            imageList1.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            imageList1.Images.SetKeyName(0, "CSApplication.png");
+            imageList1.Images.SetKeyName(1, "FolderClosed.png");
+            imageList1.Images.SetKeyName(2, "WindowsForm.png");
+            imageList1.Images.SetKeyName(3, "Panel.png");
+            imageList1.Images.SetKeyName(4, "Label.png");
+            imageList1.Images.SetKeyName(5, "ButtonClick.png");
+            imageList1.Images.SetKeyName(6, "TextBox.png");
+            imageList1.Images.SetKeyName(7, "TextArea.png");
+            imageList1.Images.SetKeyName(8, "ScrollBox.png");
+            imageList1.Images.SetKeyName(9, "ListBox.png");
+            imageList1.Images.SetKeyName(10, "ScrollViewer.png");
+            imageList1.Images.SetKeyName(11, "Slider.png");
+            imageList1.Images.SetKeyName(12, "TransformPositionCursor.png");
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
-            this.label1.TabIndex = 110;
-            this.label1.Text = "Тип виджета:";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(78, 15);
+            label1.TabIndex = 110;
+            label1.Text = "Тип виджета:";
             // 
             // protoListView
             // 
-            this.protoListView.LargeImageList = this.protoImageList;
-            this.protoListView.Location = new System.Drawing.Point(328, 155);
-            this.protoListView.MultiSelect = false;
-            this.protoListView.Name = "protoListView";
-            this.protoListView.Size = new System.Drawing.Size(995, 345);
-            this.protoListView.TabIndex = 1;
-            this.protoListView.UseCompatibleStateImageBehavior = false;
+            protoListView.LargeImageList = protoImageList;
+            protoListView.Location = new System.Drawing.Point(287, 116);
+            protoListView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            protoListView.MultiSelect = false;
+            protoListView.Name = "protoListView";
+            protoListView.Size = new System.Drawing.Size(871, 260);
+            protoListView.TabIndex = 1;
+            protoListView.UseCompatibleStateImageBehavior = false;
             // 
             // protoImageList
             // 
-            this.protoImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.protoImageList.ImageSize = new System.Drawing.Size(100, 100);
-            this.protoImageList.TransparentColor = System.Drawing.Color.Transparent;
+            protoImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            protoImageList.ImageSize = new System.Drawing.Size(100, 100);
+            protoImageList.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(401, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 20);
-            this.label2.TabIndex = 101;
-            this.label2.Text = "Имя:";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(351, 30);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(34, 15);
+            label2.TabIndex = 101;
+            label2.Text = "Имя:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(328, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 20);
-            this.label3.TabIndex = 102;
-            this.label3.Text = "Расположение:";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(287, 59);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(92, 15);
+            label3.TabIndex = 102;
+            label3.Text = "Расположение:";
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(456, 37);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(736, 27);
-            this.nameTextBox.TabIndex = 103;
+            nameTextBox.Location = new System.Drawing.Point(399, 28);
+            nameTextBox.Name = "nameTextBox";
+            nameTextBox.Size = new System.Drawing.Size(644, 23);
+            nameTextBox.TabIndex = 103;
             // 
             // browseButton
             // 
-            this.browseButton.Location = new System.Drawing.Point(1209, 72);
-            this.browseButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.browseButton.Name = "browseButton";
-            this.browseButton.Size = new System.Drawing.Size(114, 31);
-            this.browseButton.TabIndex = 104;
-            this.browseButton.Text = "Обзор...";
-            this.browseButton.UseVisualStyleBackColor = true;
-            this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
+            browseButton.Location = new System.Drawing.Point(1058, 54);
+            browseButton.Name = "browseButton";
+            browseButton.Size = new System.Drawing.Size(100, 23);
+            browseButton.TabIndex = 104;
+            browseButton.Text = "Обзор...";
+            browseButton.UseVisualStyleBackColor = true;
+            browseButton.Click += browseButton_Click;
             // 
             // locationTextBox
             // 
-            this.locationTextBox.Location = new System.Drawing.Point(456, 76);
-            this.locationTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.locationTextBox.Name = "locationTextBox";
-            this.locationTextBox.Size = new System.Drawing.Size(736, 27);
-            this.locationTextBox.TabIndex = 105;
+            locationTextBox.Location = new System.Drawing.Point(399, 57);
+            locationTextBox.Name = "locationTextBox";
+            locationTextBox.Size = new System.Drawing.Size(644, 23);
+            locationTextBox.TabIndex = 105;
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(1206, 761);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(117, 31);
-            this.cancelButton.TabIndex = 106;
-            this.cancelButton.Text = "Отмена";
-            this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            cancelButton.Location = new System.Drawing.Point(1055, 571);
+            cancelButton.Name = "cancelButton";
+            cancelButton.Size = new System.Drawing.Size(102, 23);
+            cancelButton.TabIndex = 106;
+            cancelButton.Text = "Отмена";
+            cancelButton.UseVisualStyleBackColor = true;
+            cancelButton.Click += cancelButton_Click;
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(1083, 761);
-            this.okButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(117, 31);
-            this.okButton.TabIndex = 107;
-            this.okButton.Text = "OK";
-            this.okButton.UseVisualStyleBackColor = true;
-            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            okButton.Location = new System.Drawing.Point(948, 571);
+            okButton.Name = "okButton";
+            okButton.Size = new System.Drawing.Size(102, 23);
+            okButton.TabIndex = 107;
+            okButton.Text = "OK";
+            okButton.UseVisualStyleBackColor = true;
+            okButton.Click += okButton_Click;
             // 
             // protoTextBox
             // 
-            this.protoTextBox.Location = new System.Drawing.Point(456, 517);
-            this.protoTextBox.Name = "protoTextBox";
-            this.protoTextBox.ReadOnly = true;
-            this.protoTextBox.Size = new System.Drawing.Size(867, 27);
-            this.protoTextBox.TabIndex = 111;
+            protoTextBox.Location = new System.Drawing.Point(399, 388);
+            protoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            protoTextBox.Name = "protoTextBox";
+            protoTextBox.ReadOnly = true;
+            protoTextBox.Size = new System.Drawing.Size(759, 23);
+            protoTextBox.TabIndex = 111;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(328, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 20);
-            this.label4.TabIndex = 112;
-            this.label4.Text = "Выберите прототип:";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(287, 99);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(119, 15);
+            label4.TabIndex = 112;
+            label4.Text = "Выберите прототип:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(324, 520);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 20);
-            this.label5.TabIndex = 113;
-            this.label5.Text = "Файл прототипа:";
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(284, 390);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(100, 15);
+            label5.TabIndex = 113;
+            label5.Text = "Файл прототипа:";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(324, 566);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(999, 154);
-            this.richTextBox1.TabIndex = 114;
-            this.richTextBox1.Text = "";
+            richTextBox1.Location = new System.Drawing.Point(284, 424);
+            richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
+            richTextBox1.Size = new System.Drawing.Size(875, 116);
+            richTextBox1.TabIndex = 114;
+            richTextBox1.Text = "";
             // 
             // makePrototypeCheckbox
             // 
-            this.makePrototypeCheckbox.AutoSize = true;
-            this.makePrototypeCheckbox.Location = new System.Drawing.Point(324, 737);
-            this.makePrototypeCheckbox.Name = "makePrototypeCheckbox";
-            this.makePrototypeCheckbox.Size = new System.Drawing.Size(608, 24);
-            this.makePrototypeCheckbox.TabIndex = 115;
-            this.makePrototypeCheckbox.Text = "Сделать создаваемый виджет также прототипом (<isPrototype>true</isPrototype>)";
-            this.makePrototypeCheckbox.UseVisualStyleBackColor = true;
+            makePrototypeCheckbox.AutoSize = true;
+            makePrototypeCheckbox.Location = new System.Drawing.Point(284, 553);
+            makePrototypeCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            makePrototypeCheckbox.Name = "makePrototypeCheckbox";
+            makePrototypeCheckbox.Size = new System.Drawing.Size(483, 19);
+            makePrototypeCheckbox.TabIndex = 115;
+            makePrototypeCheckbox.Text = "Сделать создаваемый виджет также прототипом (<isPrototype>true</isPrototype>)";
+            makePrototypeCheckbox.UseVisualStyleBackColor = true;
             // 
             // NewWidgetDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1342, 805);
-            this.Controls.Add(this.makePrototypeCheckbox);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.protoTextBox);
-            this.Controls.Add(this.protoListView);
-            this.Controls.Add(this.okButton);
-            this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.locationTextBox);
-            this.Controls.Add(this.browseButton);
-            this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.widgetTypeTree);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "NewWidgetDialog";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать новый файл виджета";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1174, 604);
+            Controls.Add(makePrototypeCheckbox);
+            Controls.Add(richTextBox1);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(protoTextBox);
+            Controls.Add(protoListView);
+            Controls.Add(okButton);
+            Controls.Add(cancelButton);
+            Controls.Add(locationTextBox);
+            Controls.Add(browseButton);
+            Controls.Add(nameTextBox);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(widgetTypeTree);
+            Controls.Add(label1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "NewWidgetDialog";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Создать новый файл виджета";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

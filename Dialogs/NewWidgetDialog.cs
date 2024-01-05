@@ -108,8 +108,12 @@ namespace AOUIEditor
                 return;
             }
 
-            Widget instance = Activator.CreateInstance(type) as Widget;
-            instance.Name = nameTextBox.Text;
+            XdbObject instance = Activator.CreateInstance(type) as XdbObject;
+            Widget widget = instance as Widget;
+            if (widget != null)
+            {
+                widget.Name = nameTextBox.Text;
+            }
             instance.file = Path.GetFileName(filename);
             instance.directory = Path.GetDirectoryName(filename);
 
@@ -117,10 +121,11 @@ namespace AOUIEditor
             {
                 if (instance.GetType() == typeof(WidgetForm))
                 {
-                    instance.Priority = 4000;
-                    instance.Placement.X.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
-                    instance.Placement.Y.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
-                    instance.PickChildrenOnly = true;
+                    WidgetForm widgetForm = (WidgetForm)instance;
+                    widgetForm.Priority = 4000;
+                    widgetForm.Placement.X.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
+                    widgetForm.Placement.Y.Align = WidgetAlign.WIDGET_ALIGN_BOTH;
+                    widgetForm.PickChildrenOnly = true;
                 }
                 if (instance.GetType() == typeof(WidgetTextView))
                 {
