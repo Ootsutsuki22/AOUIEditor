@@ -144,6 +144,25 @@ namespace AOUIEditor
             xRayToolStripButton.Checked = MonoControl.Instance.XRay;
         }
 
+        private void isolateToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (PropertiesForm.SelectedObject == null)
+                return;
+            if (isolateToolStripButton.Checked)
+            {
+                Project.SetIsolatedObject(null);
+                isolateToolStripButton.Checked = false;
+            }
+            else
+            {
+                if (PropertiesForm.SelectedObject.GetType() != typeof(UIAddon))
+                {
+                    Project.SetIsolatedObject(PropertiesForm.SelectedObject as XdbObject);
+                    isolateToolStripButton.Checked = true;
+                }
+            }
+        }
+
         #endregion
 
         #region Placement toolstrips

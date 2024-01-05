@@ -124,8 +124,14 @@
   <data name="AlignRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Menu\AlignRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AlignBoth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Menu\AlignBoth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AlignVerticalStretch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Menu\AlignVerticalStretch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Menu\Xray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NewItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NewItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,9 +142,6 @@
   <data name="OpenDocumentGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OpenDocumentGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OpenFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,11 +151,11 @@
   <data name="AddItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BorderElement" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Menu\BorderElement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AlignCenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Menu\AlignCenter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Menu\Dock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AlignBottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Menu\AlignBottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +163,8 @@
   <data name="AlignMiddle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Menu\AlignMiddle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AlignBoth" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Menu\AlignBoth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OpenFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NewDocumentCollection" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NewDocumentCollection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,10 +175,10 @@
   <data name="AlignToGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Menu\AlignToGrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Xray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Menu\Xray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BorderElement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Menu\BorderElement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Menu\Dock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AbstractCube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Menu\AbstractCube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

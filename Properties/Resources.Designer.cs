@@ -63,6 +63,16 @@ namespace AOUIEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AbstractCube {
+            get {
+                object obj = ResourceManager.GetObject("AbstractCube", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AddItem {
             get {
                 object obj = ResourceManager.GetObject("AddItem", resourceCulture);

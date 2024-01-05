@@ -253,7 +253,14 @@ namespace AOUIEditor
                 UIAddon addon = (UIAddon)xdb;
                 if (addon.Form == null)
                     return;
-                Add(parent, addon.Form, false, true);
+                if (Project.IsolatedObject == null)
+                {
+                    Add(parent, addon.Form, false, true);
+                }
+                else
+                {
+                    Add(rootItem, Project.IsolatedObject, false, true);
+                }
             }
 
             if (xdb.GetType() == typeof(Widget) || xdb.GetType().IsSubclassOf(typeof(Widget)))

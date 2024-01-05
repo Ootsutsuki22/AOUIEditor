@@ -16,6 +16,8 @@ namespace AOUIEditor
         public static string Filename { get; private set; }
         public static string Location { get; private set; }
 
+        public static XdbObject IsolatedObject { get; private set; }
+
         public static void Open(string filename)
         {
             Clear();
@@ -133,6 +135,12 @@ namespace AOUIEditor
         public static bool IsIngameHref(string href)
         {
             return href.StartsWith("/");
+        }
+
+        public static void SetIsolatedObject(XdbObject xdbObject)
+        {
+            IsolatedObject = xdbObject;
+            UpdateInfo();
         }
     }
 }
