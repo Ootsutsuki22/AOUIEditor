@@ -60,7 +60,7 @@
           "EditorCommon\\ListEntry\\ListEntry.(UITexture).xdb",
           "EditorCommon\\ListEntry\\ListEntry.(WidgetLayerTiledTexture).xdb"
         ],
-        "Description": "Полупрозрачная рамка для контента. Например, в такую панель можно вставлять WidgetEditLine"
+        "Description": "Элемент списка"
       },
       {
         "Icon": "Icons\\Frame.png",
@@ -72,7 +72,7 @@
           "EditorCommon\\WindowFrame\\Frame.(UITexture).xdb",
           "EditorCommon\\WindowFrame\\Frame.(WidgetLayerTiledTexture).xdb"
         ],
-        "Description": "Полупрозрачная рамка для контента. Например, в такую панель можно вставлять WidgetEditLine"
+        "Description": "Фрейм окна"
       },
       {
         "Icon": "Icons\\TiledHeader.png",
@@ -234,7 +234,7 @@
           "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCountFormatNormal.txt",
           "EditorCommon\\UniSlot\\SlotTextLabel\\SlotCountValue.txt"
         ],
-        "Description": "Панель в стиле тултипа"
+        "Description": "Универсальный слот"
       }
     ]
   },
