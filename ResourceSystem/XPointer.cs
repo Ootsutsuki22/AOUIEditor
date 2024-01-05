@@ -35,6 +35,7 @@ namespace AOUIEditor.ResourceSystem
         UITextureElement,
         UITexture,
         UIWidgetSound,
-        FMODProject
+        FMODProject,
+        WidgetCss
     }
 }

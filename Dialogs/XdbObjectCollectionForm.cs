@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,14 +14,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AOUIEditor
 {
-    public partial class WidgetCollectionForm : Form
+    public partial class XdbObjectCollectionForm : Form
     {
-        private Widget[] _value;
-        public Widget[] Value
+        private Type _type;
+
+        private object[] _value;
+        public object[] Value
         {
             get
             {
-                return _value;
+                MethodInfo method = typeof(XdbObjectCollectionForm).GetMethod("ConvertArray").MakeGenericMethod(new Type[] { _type });
+                var result = method.Invoke(this, new object[] { _value });
+                return result as object[];
             }
             set
             {
@@ -29,10 +34,23 @@ namespace AOUIEditor
             }
         }
 
-        private List<Widget> list;
-
-        public WidgetCollectionForm()
+        public static T[] ConvertArray<T>(object[] arr)
         {
+            if (arr == null)
+                return null;
+            T[] result = new T[arr.Length];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result[i] = (T)arr[i];
+            }
+            return result;
+        }
+
+        private List<object> list;
+
+        public XdbObjectCollectionForm(Type type)
+        {
+            _type = type;
             InitializeComponent();
         }
 
@@ -41,7 +59,7 @@ namespace AOUIEditor
 
             if (_value == null)
             {
-                list = new List<Widget>();
+                list = new List<object>();
             }
             else
             {
@@ -58,18 +76,34 @@ namespace AOUIEditor
             {
                 if (list[i] != null)
                 {
-                    if (list[i].isIngame)
+                    var xdb = list[i] as XdbObject;
+                    var widget = xdb as Widget;
+                    if (xdb.isIngame)
                     {
                         ListViewItem item = new ListViewItem(i.ToString());
-                        item.SubItems.Add(list[i].Name);
-                        item.SubItems.Add(list[i].GetFullPath());
+                        if (widget != null)
+                        {
+                            item.SubItems.Add(widget.Name);
+                        }
+                        else
+                        {
+                            item.SubItems.Add("");
+                        }
+                        item.SubItems.Add(xdb.GetFullPath());
                         listView.Items.Add(item);
                     }
                     else
                     {
                         ListViewItem item = new ListViewItem(i.ToString());
-                        item.SubItems.Add(list[i].Name);
-                        item.SubItems.Add(Project.GetRelativePath(list[i].GetFullPath()));
+                        if (widget != null)
+                        {
+                            item.SubItems.Add(widget.Name);
+                        }
+                        else
+                        {
+                            item.SubItems.Add("");
+                        }
+                        item.SubItems.Add(Project.GetRelativePath(xdb.GetFullPath()));
                         listView.Items.Add(item);
                     }
                 }
@@ -89,7 +123,9 @@ namespace AOUIEditor
                 openFileDialog.Filter = "Widget (*.xdb)|*.xdb";
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    Widget xdbObject = XdbObject.Load<Widget>(openFileDialog.FileName);
+                    MethodInfo method = typeof(XdbObject).GetMethod("Load").MakeGenericMethod(new Type[] { _type });
+                    XdbObject xdbObject = method.Invoke(this, new object[] { openFileDialog.FileName, null, false }) as XdbObject;
+                    //Widget xdbObject = XdbObject.Load<Widget>(openFileDialog.FileName);
                     if (xdbObject != null)
                     {
                         list.Add(xdbObject);
@@ -117,7 +153,7 @@ namespace AOUIEditor
             int idx = listView.SelectedIndices[0];
             if (idx > 0)
             {
-                Widget a = list[idx];
+                object a = list[idx];
                 list[idx] = list[idx - 1];
                 list[idx - 1] = a;
                 UpdateList();
@@ -132,7 +168,7 @@ namespace AOUIEditor
             int idx = listView.SelectedIndices[0];
             if (idx >= 0 && idx < list.Count - 1)
             {
-                Widget a = list[idx];
+                object a = list[idx];
                 list[idx] = list[idx + 1];
                 list[idx + 1] = a;
                 UpdateList();

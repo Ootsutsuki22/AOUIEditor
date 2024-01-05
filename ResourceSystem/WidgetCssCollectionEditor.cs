@@ -14,7 +14,7 @@ namespace AOUIEditor.ResourceSystem
     // Widget: Children
     // WidgetPlacementXY: sizingWidgets
 
-    public class WidgetCollectionEditor : UITypeEditor
+    public class WidgetCssCollectionEditor : UITypeEditor
     {
         public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext context) => UITypeEditorEditStyle.Modal;
 
@@ -22,7 +22,7 @@ namespace AOUIEditor.ResourceSystem
         {
             if (provider?.GetService(typeof(IWindowsFormsEditorService)) is IWindowsFormsEditorService edSvc)
             {
-                using (XdbObjectCollectionForm form = new XdbObjectCollectionForm(typeof(Widget)))
+                using (XdbObjectCollectionForm form = new XdbObjectCollectionForm(typeof(WidgetCss)))
                 {
                     form.Value = value as object[];
                     if (edSvc.ShowDialog(form) == DialogResult.OK)
