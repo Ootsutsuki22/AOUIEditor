@@ -17,6 +17,8 @@ namespace AOUIEditor.ResourceSystem
         {
             return type.GetProperties()
                   .Where(pi => !Attribute.IsDefined(pi, typeof(SkipPropertyAttribute)))
+                  .OrderBy(x => x.Name != "Header")
+                  .ThenBy(x => x.MetadataToken)
                   .ToArray();
         }
     }
