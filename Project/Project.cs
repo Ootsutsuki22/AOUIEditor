@@ -43,6 +43,7 @@ namespace AOUIEditor
         public static void Clear()
         {
             Addon = null;
+            IsolatedObject = null;
             PropertiesForm.SelectedObject = null;
             Item.FillData();
             TreeForm.RefreshTree();

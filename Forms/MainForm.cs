@@ -414,6 +414,7 @@ namespace AOUIEditor
                     TreeForm.RefreshTree();
                     Item.Sort();
                     addNewToolStripButton.Enabled = true;
+                    isolateToolStripButton.Checked = false;
                     this.Text = "AOUIEditor - " + Project.Addon.Name;
                 }
             }
@@ -432,6 +433,7 @@ namespace AOUIEditor
                     TreeForm.RefreshTree();
                     Item.Sort();
                     addNewToolStripButton.Enabled = true;
+                    isolateToolStripButton.Checked = false;
                     this.Text = "AOUIEditor - " + Project.Addon.Name;
                 }
             }
